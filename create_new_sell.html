@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Create New Sell</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+   <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/create_new_sell.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
+</head>
+<body class="hold-transition layout-top-nav" style="background-color: #f2f2f2;">
+
+<div class="wrapper">
+
+   <!-- Navbar -->
+
+  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white" style="box-shadow: 0 4px 4px -4px rgba(0,0,0,.2); height:60px;font-family: 'Open Sans', sans-serif;">
+    <div class="container-fluid">
+      <a href="index3.html" class="navbar-brand">
+        <img src="dist/img/logo.png" alt="img" class="brand-image" style="width: 75px;height: 80px;margin-top: 20px;margin-left: -20px;">
+      </a>
+      
+      <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse order-3" id="navbarCollapse"style="background-color: #fff;">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav" style="margin-left:5px;">
+          <li class="nav-item">  
+            <a href="index3.html" class="nav-link" style="font-size: 16px;font-family: 'Lato', sans-serif;"><i class="fas fa-cubes"></i>&nbsp; Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" style="color: #555956;font-size: 15px;font-family: 'Open Sans', sans-serif;"><i class="fas fa-database"></i> &nbsp;ETH Address</a>
+          </li>
+           <li class="nav-item">
+            <a href="#" class="nav-link" style="color: #555956;font-size: 15px;font-family: 'Open Sans', sans-serif;"><i class="fas fa-file-contract"></i> &nbsp; Smart Contarcts</a>
+          </li>
+           <li class="nav-item active">
+            <a href="#" class="nav-link" style="color:  #2771FA;font-size: 15px;font-family: 'Open Sans', sans-serif;"><i class="fas fa-file-signature"></i> &nbsp; Create New Sell</a>
+          </li>
+           <li class="nav-item">
+            <a href="#" class="nav-link" style="color: #555956;font-size: 15px;font-family: 'Open Sans', sans-serif;"><i class="fas fa-file-invoice-dollar"></i> &nbsp; Manage Sells</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar ml-auto">
+          <li class="dropdown" style="background-color:#F5F7FA;">
+            <img src="dist/img/191.jpg" class="img img-circle m-1" style="width:20px;">
+          <a href="#" class="dropdown-toggle m-1" data-toggle="dropdown" style="color:black;font-size:12px; ">John Doe<b class="caret" style="margin-right:20px;"></b></a>
+          <ul class="dropdown-menu" style="margin-right:20px;">
+            <i class="fas fa-angle-right"></i>
+            <li align="center" class="well">
+                <div></div>
+                <a href="#" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-lock"></span> Security</a>
+                <a href="#" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+            </li>
+           </ul>
+        </li>
+      </ul>
+      </div>
+
+      <!-- Right navbar links -->
+      <!--<ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                  <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">admin</a>
+                      <div class="dropdown-menu">
+                          <a href="#" class="dropdown-item">Action</a>
+                          <a href="#" class="dropdown-item">Another action</a>
+                      </div>
+                  </div>
+       
+      </ul>-->
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="col-lg-12 col-12">
+    <p style="font-size: 1.8em;margin-top: 20px;font-weight:600;">Create New Sell</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9 co-sm-6">
+
+
+
+      <div class="row">
+        
+                <!-- start project Default box -->
+      <div class="card" style="width: 100%; min-height:720px;">
+        <div class="card-header">
+          <h3 class="card-title m-2"><b>Register ETH Address</b></h3>
+        </div>
+        <div class="card-body p-0">
+          <form class="m-3">
+            <div class="form-group row">
+                <div class="col-md-6 col-12">
+                 <select class="mdb-select md-form colorful-select dropdown-primary" style="color: #797c80;">
+                   <option value="1" style="margin-left: 20px;">Address</option>
+                   <option value="2">Option 2</option>
+                   <option value="3">Option 3</option>
+                   <option value="4">Option 4</option>
+                   <option value="5">Option 5</option>
+                  </select>
+                </div>
+                <div class="col-md-6 col-12">
+                  <select class="mdb-select md-form colorful-select dropdown-primary" style="color: #797c80;">
+                   <option value="1">Select Your Token</option>
+                   <option value="2">Option 2</option>
+                   <option value="3">Option 3</option>
+                   <option value="4">Option 4</option>
+                   <option value="5">Option 5</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6 col-12">
+                  <select class="mdb-select md-form colorful-select dropdown-primary" style="color: #797c80;">
+                   <option value="1">Select the token that you want</option>
+                   <option value="2">Option 2</option>
+                   <option value="3">Option 3</option>
+                   <option value="4">Option 4</option>
+                   <option value="5">Option 5</option>
+                  </select>
+                </div>
+                
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6 col-12">
+                  <div class="token-status"  style="outline: 1.5px dashed #3333ff ;">
+                  <h4 class="m-1" style="font-size: 20px;color: #3333ff;"><b>You Token status</b></h4>
+                  <p class="m-1"style="color: #3333ff;">On Your Address, the balance is 200000 Vechain</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6 col-12">
+                 <input type="price" name="" class=" form-control" id="price" placeholder="Enter The Amount to sell">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6 col-12">
+                 <input type="price" name="" class=" form-control" id="tokenprice" placeholder="Enter The Token Price(USD)">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-md-6 col-12">
+                 <button type="button" class="btn btn-primary" style="width: 160px;background-color:#3333ff ;">Sell Now</button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </form>
+   
+        </div>
+        <!-- /.card-body -->
+      </div>
+      </div>
+      
+
+    </div>
+
+
+    <div class="col-lg-3 col-sm-6">
+
+
+      <div class="row">
+        <div class="col-lg">
+          <section class="connectedSortable">
+
+              <!-- PRODUCT LIST -->
+            <div class="card" style="min-width:290px;">
+              <div class="card-header" style="border:none;">
+                <h3 class="card-title" style="margin-top:12px;font-size:15px;"><b>Registered Smart Contracts</h3>
+
+                
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0"  style="font-family: 'Hind', sans-serif;">
+                <ul class="products-list product-list-in-card pb-1 m-2">
+
+                  <li class="item" style="background-color:#F5F7FA;margin:10px;border:none;">
+                    <div class="product-img img-circle">
+                      <img src="dist/img/Layer 2.png" alt="Product Image" style="width:30px;height:30px;" class="ml-2 mt-1">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title" style="font-size:12px;color:black;"><b>Akivia ERC20</b>
+                        <span class="badge float-right mr-2 mt-2" style="color:black; text-align:right;">DAI <small class="product-description mt-2" style="align:Left;color:blue;"><b>View Details</b></i></small></span></a>
+                      <small class="product-description" style="margin-top:-5px;font-size: 10px;">
+                        $2/DAI
+                      </small>
+                    </div>
+                  </li>
+
+
+                  <li class="item" style="background-color:#F5F7FA;margin:10px;border:none;">
+                    <div class="product-img img-circle">
+                       <img src="dist/img/Layer 3.png" alt="Product Image" style="width:30px;height:30px;" class="ml-2 mt-1">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title" style="font-size:12px;color:black;"><b>DAI ERC20</b>
+                        <span class="badge float-right mr-2 mt-2" style="color:black; text-align:right;">AKIVIA <small class="product-description mt-2" style="align:Left;color:blue;"><b>View Details</b></small></span></a>
+                      <small class="product-description" style="margin-top:-5px;font-size: 10px;">
+                        $2/DAI
+                      </small>
+                    </div>
+                  </li>
+
+                  <li class="item" style="background-color:#F5F7FA;margin:10px;border:none;">
+                    <div class="product-img img-circle">
+                       <img src="dist/img/Layer 4.png" alt="Product Image" style="width:30px;height:30px;" class="ml-2 mt-1">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title" style="font-size:12px;color:black;"><b>DAI ERC20</b>
+                        <span class="badge float-right mr-2 mt-2" style="color:black; text-align:right;">CVC<small class="product-description mt-2" style="align:Left;color:blue;"><b>View Details</b></small></span></a>
+                      <small class="product-description" style="margin-top:-5px;font-size: 10px;">
+                        $2/DAI
+                      </small>
+                    </div>
+                  </li>
+
+                  <li class="item" style="background-color:#F5F7FA;margin:10px;border:none;">
+                   <div class="product-img img-circle">
+                       <img src="dist/img/Layer 5.png" alt="Product Image" style="width:30px;height:30px;" class="ml-2 mt-1">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title" style="font-size:12px;color:black;"><b>DAI ERC20</b>
+                        <span class="badge float-right mr-2 mt-2" style="color:black; text-align:right;">DAI <small class="product-description mt-2" style="align:Left;color:blue;"><b>View Details</b></small></span></a>
+                      <small class="product-description" style="margin-top:-5px;font-size: 10px;">
+                        $2/DAI
+                      </small>
+                    </div>
+                  </li>
+
+                  <li class="item" style="background-color:#F5F7FA;margin:10px;border:none;">
+                   <div class="product-img img-circle">
+                       <img src="dist/img/Layer 6.png" alt="Product Image" style="width:30px;height:30px;" class="ml-2 mt-1">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title" style="font-size:12px;color:black;"><b>DAI ERC20</b>
+                        <span class="badge float-right mr-2 mt-2" style="color:black; text-align:right;">Akivia <small class="product-description mt-2" style="align:Left;color:blue;"><b>View Details</b></small></span></a>
+                      <small class="product-description" style="margin-top:-5px;">
+                        $2/DAI
+                      </small>
+                    </div>
+                  </li>
+
+
+                  <li class="item" style="background-color:#F5F7FA;margin:10px;border:none;">
+                   <div class="product-img img-circle">
+                       <img src="dist/img/Layer 7.png" alt="Product Image" style="width:30px;height:30px;" class="ml-2 mt-1">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title" style="font-size:12px;color:black;"><b>DAI ERC20</b>
+                        <span class="badge float-right mr-2 mt-2" style="color:black; text-align:right;">CVC<small class="product-description mt-2" style="align:Left;color:blue;"><b>View Details</b></small></span></a>
+                      <small class="product-description" style="margin-top:-5px;">
+                        $2/DAI
+                      </small>
+                    </div>
+                  </li>
+
+
+
+                  
+                
+                
+                </ul>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer text-center" style="background-color:transparent;">
+                <a href="javascript:void(0)" class="uppercase float-left" style="margin-top: -20px;font-size: 15px;">See All transactions</a>
+              </div>
+              <!-- /.card-footer -->
+            </div>
+
+             <!-- PRODUCT LIST -->
+            <div class="card" style="min-width: 290px;min-height: 200px;">
+              <div class="card-header" style="border:none;">
+                <h3 class="card-title" style="font-size: 15px;"><b>Complete Your account</h3>
+                  <h6 class="text-right">1/2</h6>
+
+                
+              </div>
+              <!-- /.card-header -->
+                       <div class="card-body p-0" style="font-family: 'PT Sans', sans-serif;">
+                <ul class="products-list product-list-in-card ml-3 mr-2" >
+                  <li class="item border" style="width: 250px;height:60px;">
+                    <div class="product-img">
+                      <img src="dist/img/Layer 8.png" class="ml-3 mt-2" style="width: 25px;height: 25px;">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title" style="font-size: 11px;margin-left: -10px;color: black;"> Confirm your email address
+                      </a>
+                      <small class="product-description" style="font-size: 9px;margin-left: -10px;">Adds basic account security
+                      </small>
+                    </div>
+                  </li>
+                   <li class="item border mt-2 mb-2"style="width: 250px;height:60px;">
+                    <div class="product-img">
+                      <img src="dist/img/Layer 9.png" class="ml-3 mt-2"style="width: 25px;height: 25px;">
+                    </div>
+                    <div class="product-info">
+                      <a href="javascript:void(0)" class="product-title"style="font-size: 11px;margin-left: -10px;color: black;"> Add to Wallet
+                      </a>
+                      <small class="product-description"style="font-size: 9px;margin-left: -10px;">
+                        Adds basic account security
+                      </small>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+           
+          </section>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- AdminLTE App -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+<!-- database -->
+<script src="plugins/datatables/jquery.dataTables.js"></script>
+<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<!-- auto date -->
+<script>
+var d = new Date(2020,0,23 ,4, 8, 0, 0);
+ document.getElementById("demo").innerHTML = d;
+</script>
+
+
+
+<!-- page script for table-->
+<script>
+  $(function () {
+    $("#example1").DataTable();
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+    });
+  });
+</script>
+</body>
+</html>
